@@ -1,7 +1,7 @@
 import { useMediaQuery, Box, Drawer } from "@mui/material";
 import SidebarItems from "./SidebarItems";
 import { Upgrade } from "./Updrade";
-import { Sidebar, Logo } from 'react-mui-sidebar';
+import { Sidebar, Logo } from "react-mui-sidebar";
 
 interface ItemType {
   isMobileSidebarOpen: boolean;
@@ -20,16 +20,14 @@ const MSidebar = ({
 
   // Custom CSS for short scrollbar
   const scrollbarStyles = {
-    '&::-webkit-scrollbar': {
-      width: '7px',
-
+    "&::-webkit-scrollbar": {
+      width: "7px",
     },
-    '&::-webkit-scrollbar-thumb': {
-      backgroundColor: '#eff2f7',
-      borderRadius: '15px',
+    "&::-webkit-scrollbar-thumb": {
+      backgroundColor: "#eff2f7",
+      borderRadius: "15px",
     },
   };
-
 
   if (lgUp) {
     return (
@@ -62,25 +60,19 @@ const MSidebar = ({
             }}
           >
             <Sidebar
-              width={'270px'}
+              width="270px"
               collapsewidth="80px"
-              open={isSidebarOpen}
+              isCollapse={!isSidebarOpen} // ✅ Use isCollapse instead of open
               themeColor="#5d87ff"
               themeSecondaryColor="#49beff"
               showProfile={false}
             >
               {/* ------------------------------------------- */}
-              {/* Logo */}
+              {/* Sidebar Items */}
               {/* ------------------------------------------- */}
-              {/* <Logo img="/images/logos/dark-logo.svg" /> */}
-              <Box>
-                {/* ------------------------------------------- */}
-                {/* Sidebar Items */}
-                {/* ------------------------------------------- */}
-                <SidebarItems />
-                <Upgrade />
-              </Box>
-            </Sidebar >
+              <SidebarItems />
+              <Upgrade />
+            </Sidebar>
           </Box>
         </Drawer>
       </Box>
@@ -101,13 +93,13 @@ const MSidebar = ({
       }}
     >
       {/* ------------------------------------------- */}
-      {/* Sidebar Box */}
+      {/* Sidebar For Mobile */}
       {/* ------------------------------------------- */}
       <Box px={2}>
         <Sidebar
-          width={'270px'}
+          width="270px"
           collapsewidth="80px"
-          isCollapse={false}
+          isCollapse={false} // ✅ Use isCollapse instead of open
           mode="light"
           direction="ltr"
           themeColor="#5d87ff"
@@ -115,27 +107,14 @@ const MSidebar = ({
           showProfile={false}
         >
           {/* ------------------------------------------- */}
-          {/* Logo */}
-          {/* ------------------------------------------- */}
-          {/* <Logo img="/images/logos/dark-logo.svg" /> */}
-          {/* ------------------------------------------- */}
           {/* Sidebar Items */}
           {/* ------------------------------------------- */}
           <SidebarItems />
           <Upgrade />
         </Sidebar>
       </Box>
-      {/* ------------------------------------------- */}
-      {/* Sidebar For Mobile */}
-      {/* ------------------------------------------- */}
-
     </Drawer>
   );
 };
 
 export default MSidebar;
-
-
-
-
-

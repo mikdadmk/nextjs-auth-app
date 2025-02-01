@@ -1,10 +1,9 @@
-// import { Helmet } from 'react-helmet';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
-
+import React from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 type Props = {
   description?: string;
-  children: JSX.Element | JSX.Element[];
+  children: React.ReactNode;  // ✅ Use React.ReactNode instead of JSX.Element
   title?: string;
 };
 

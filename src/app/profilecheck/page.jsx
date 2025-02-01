@@ -63,7 +63,7 @@ export default function ProfileCheck() {
       <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-lg">
         
         {/* ✅ Fixed: Removed passHref and `component="a"` */}
-        <Link href="/result">
+        <Link href="/">
           <IconButton sx={{ mb: 2 }}>
             <ArrowBackIcon />
           </IconButton>

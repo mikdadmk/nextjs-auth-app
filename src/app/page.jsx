@@ -2,28 +2,28 @@
 import React, { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 
-// Dynamically import the Home component (prevents blocking SSR)
-const Home = dynamic(() => import("@/app/home"), { ssr: false });
+// Dynamically import the Home component
+const Home = dynamic(() => import("@/app/home"));
 
 function Page() {
-  const [loading, setLoading] = useState(true);
+  const [showHome, setShowHome] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 500); // Simulate loading
+    const timer = setTimeout(() => setShowHome(true), 500);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div>
-      {loading ? (
-        <div className="h-screen flex items-center justify-center">
-          <p className="text-lg">Loading...</p>
-        </div>
-      ) : (
-        <Home />
-      )}
+      {showHome ? <Home /> : <LoadingScreen />}
     </div>
   );
 }
+
+const LoadingScreen = () => (
+  <div className="h-screen flex items-center justify-center">
+    <p className="text-lg">Loading...</p>
+  </div>
+);
 
 export default Page;

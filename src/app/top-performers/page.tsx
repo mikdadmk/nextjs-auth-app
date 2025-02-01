@@ -65,7 +65,7 @@ const AllPerformers: React.FC = () => {
   return (
     <Box p={3} sx={{ background: "linear-gradient(135deg, #f1f1f1, #c5e1e5)", borderRadius: "12px" }}>
       {/* ✅ Fixed: Used `onClick` instead of `<Link>` to avoid nested `<a>` elements */}
-      <IconButton sx={{ mb: 2 }} onClick={() => router.push("/result")}>
+      <IconButton sx={{ mb: 2 }} onClick={() => router.push("/")}>
         <ArrowBackIcon />
       </IconButton>
 
