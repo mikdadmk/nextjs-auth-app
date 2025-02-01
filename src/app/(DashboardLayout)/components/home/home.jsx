@@ -122,7 +122,7 @@ const WelcomePage = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            className="px-6 sm:px-8 md:px-12 py-2 sm:py-3 bg-yellow-400 text-white font-bold rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300"
+            className="px-6 sm:px-8 md:px-12 py-2 sm:py-3 bg-yellow-400 text-black font-bold rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300"
           >
             Login
           </motion.button>
