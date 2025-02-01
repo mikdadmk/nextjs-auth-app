@@ -171,6 +171,7 @@ const MarkList = () => {
                     <option value="Speech Arabic">Speech Arabic</option>
                     <option value="Speech English">Speech English</option>
                     <option value="Speech Urdu">Speech Urdu</option>
+              <option value="Feature Writing Malayalam">Feature Writing Malayalam</option>
                     <option value="Nasheeda">Nasheeda</option>
                     <option value="Madhunnabi">Madhunnabi</option>
                     <option value="Ma'shara">Mashara</option>
@@ -461,7 +462,7 @@ const MarkList = () => {
                     <option value="Heading Making Arabic">Heading Making Arabic</option>
                     <option value="Heading Making Urdu">Heading Making Urdu</option>
                     <option value="Calligraphy">Calligraphy</option>
-                    <option value="Feature Writing Malayalam">Story Telling</option>
+                    <option value="Feature Writing Malayalam">Feature Writing Malayalam</option>
                     <option value="Essay Writing Malayalam">Essay Writing Malayalam</option>
                     <option value="Essay Writing English">Essay Writing English</option>
                     <option value="Essay Writing Arabic">Essay Writing Arabic</option>
