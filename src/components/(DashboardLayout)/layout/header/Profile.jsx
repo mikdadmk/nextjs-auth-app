@@ -34,9 +34,9 @@ const ProfileButton = () => {
       {/* Dropdown Menu */}
       {menuOpen && (
         <div className="absolute right-0 mt-2 w-56 bg-white text-black rounded-lg shadow-lg border border-gray-200 z-50">
-          <div className="p-4 border-b text-center">
+          <div className="p-4 border-b text-center overflow-hidden">
             <p className="font-bold"></p>
-            <p className="text-sm text-gray-500">{user?.email || "No email available"}</p>
+            <p className="text-sm text-gray-500 overflow-hidden ">{user?.email || "No email available"}</p>
             <p className="text-indigo-600 font-semibold mt-1">Role: User</p>
           </div>
           <div className="p-2">
