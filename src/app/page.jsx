@@ -21,8 +21,14 @@ function Page() {
 }
 
 const LoadingScreen = () => (
-  <div className="h-screen flex items-center justify-center">
-    <p className="text-lg">Loading...</p>
+  <div className="h-screen flex flex-col items-center justify-center bg-gradient-to-r from-purple-500 to-indigo-600">
+    {/* Spinner */}
+    <div className="w-16 h-16 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+
+    {/* Stylish Loading Text */}
+    <p className="mt-4 text-white text-lg font-semibold animate-pulse">
+      Getting Ready...
+    </p>
   </div>
 );
 
