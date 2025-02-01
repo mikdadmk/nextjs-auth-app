@@ -15,7 +15,7 @@ const nextConfig = {
     MONGODB_DB: process.env.MONGODB_DB,
   },
   images: {
-    domains: ["res.cloudinary.com"], // ✅ Allow Cloudinary images
+    domains: ["res.cloudinary.com", "aicedu.in"], // ✅ Allow Cloudinary images
   },
   reactStrictMode: true,
 };
