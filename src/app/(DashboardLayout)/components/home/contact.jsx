@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -84,6 +85,14 @@ const ContactPage = () => {
             Send Message
           </button>
         </form>
+        <Link href="/messages">
+        <button 
+            type="submit"
+            className="bg-white text-teal-600 font-bold py-2 px-6 rounded-lg shadow-lg hover:bg-gray-100 mt-4 "
+          >
+            View Message
+          </button>
+          </Link>
       </motion.div>
     </section>
   );
