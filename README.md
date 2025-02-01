@@ -29,6 +29,7 @@ Fantastic Fest is a modern web application designed to streamline the management
 - **📊 Real-Time Updates**: Stay informed with live event tracking and instant notifications.
 - **📸 Media Integration**: Upload and manage event posters, photos, and videos using Cloudinary.
 - **📝 Participant Registration**: Simplify participant registrations and submissions for both arts and sports.
+- **🔒 Firebase Authentication**: Secure user authentication with Firebase.
 
 ### 💫 Technical Highlights
 - **⚡ Next.js Powered**: Blazing-fast performance with server-side rendering and static generation.
