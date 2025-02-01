@@ -445,7 +445,9 @@ const MarkList = () => {
                     <option value="Thaleelul Ibara">Thaleelul Ibara</option>      
                     <option value="Short Story Malayalm">Short Story Malayalm</option>
                     <option value="Short Story English">Short Story English</option>
+                    <option value="Feature Writing MLM">Feature Writing MLM</option>
                     <option value="Poem Writing Arabic">Poem Writing Arabic</option>
+                    <option value="Poem Writing Malalyalam">Poem Writing Malalyalam</option>
                     <option value="Hiku Poem Malayalam">Hiku Poem Malayalam</option>
                     <option value="News Reporting Malayalam">News Reporting Malayalam</option>
                     <option value="News Reporting English">News Reporting English</option>
@@ -455,7 +457,7 @@ const MarkList = () => {
                     <option value="Translation URD-MLM">Translation URD-MLM</option>
                     <option value="Translation ENG-MLM">Translation ENG-MLM</option>
                     <option value="Caption Making Malyalam">Caption Making Malyalam</option>
-                    <option value="Heading Making English">Heading Making English</option>
+                    <option value="Heading Making Malayalam">Heading Making Malayalam</option>
                     <option value="Heading Making Arabic">Heading Making Arabic</option>
                     <option value="Heading Making Urdu">Heading Making Urdu</option>
                     <option value="Calligraphy">Calligraphy</option>
@@ -472,6 +474,7 @@ const MarkList = () => {
                     <option value="Dictionry Making">Dictionry Making</option>
                     <option value="MS Paint">MS Paint</option>
                     <option value="Story Completion">Story Completion</option>
+                    <option value="Group Discussion">Group Discussion</option>
                     
                   </>
                 )}
@@ -574,7 +577,6 @@ const MarkList = () => {
                     <option value="Q-science PPT">Q-science PPT</option>
                     <option value="Q-Talent Hunt">Q-Talent Hunt</option>
                     <option value="Qur'anic Debate">Quranic Debate</option>
-                    <option value="Group Discussion">Group Discussion</option>
                     <option value="Group Song">Group Song</option>
                     <option value="Podcast">Podcast</option>
                     <option value="Collage">Collage</option>
